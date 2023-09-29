@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "Your commit message: "
+read x
 git add .
-git commit -m 'new'
+git commit -m '${x}'
 git push
