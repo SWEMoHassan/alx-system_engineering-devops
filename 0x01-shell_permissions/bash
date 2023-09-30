@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Your File Nam: "
+read filename
+echo "#!/bin/bash" > ${filename}
