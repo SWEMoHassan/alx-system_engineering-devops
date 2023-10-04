@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la | cat > ls_cwd_content
+[ -e ls_cwd_content ] && rm ls_cwd_content; ls -la > ls_cwd_content
