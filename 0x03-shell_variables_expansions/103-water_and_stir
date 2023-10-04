@@ -1,2 +1,3 @@
 #!/bin/bash
-printf "%x\n" "$((16#${WATER,,} + 16#${STIR,,}))"
+echo $(printf "%s+%s" "$WATER" "$STIR" | tr 'abcdefghijklmnopqrstuvwxyz' '0123456789' | fold -w 1 | paste -s -d '' | sort -n | uniq | tr '0123456789' 'abcdefghijklmnopqrstuvwxyz')
+
