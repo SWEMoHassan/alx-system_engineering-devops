@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(baseconv $(printf "%s+%s" "$WATER" "$STIR") bestchol)
+printf "%x\n" "$((16#${WATER,,} + 16#${STIR,,}))"
