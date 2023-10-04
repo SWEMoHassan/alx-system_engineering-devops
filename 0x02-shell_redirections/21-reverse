@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$input" | rev
+echo -n "${1}" | rev
