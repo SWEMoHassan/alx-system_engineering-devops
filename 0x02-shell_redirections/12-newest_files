@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -print0 | sort -rz | head -n 10 -z
+ls -l | sort -r | cut -d' ' -f9 | head -n 10
